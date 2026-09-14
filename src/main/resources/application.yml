@@ -1,0 +1,37 @@
+# EatAgent 应用配置
+spring:
+  application:
+    name: EatAgent
+  ai:
+    openai:
+      # 阿里百炼 DashScope OpenAI 兼容模式
+      api-key: ${DASHSCOPE_API_KEY}
+      base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
+      chat:
+        model: glm-5.2
+        temperature: 0.1
+        max-tokens: 2048
+      embedding:
+        model: qwen3.7-text-embedding-flash
+
+# EatAgent RAG 配置
+eatagent:
+  data:
+    # 外部数据路径（可选，回退到 classpath:data/dishes/）
+    path: /Users/yb/Develop/all-in-rag/data/C8/cook/dishes
+  rag:
+    top-k: 3
+    candidate-multiplier: 3
+    rrf-k: 60
+    rerank-timeout-ms: 3000
+    context-max-length: 2000
+    llm-temperature: 0.1
+    llm-max-tokens: 2048
+  rerank:
+    # DashScope Rerank API（非 OpenAI 兼容，手写 HTTP 调用）
+    api-key: ${DASHSCOPE_API_KEY}
+    model: qwen3.7-text-rerank
+    base-url: https://dashscope.aliyuncs.com/api/v1/services/rerank/text-rerank/text-rerank
+  save:
+    vector-save-path: db/data/vector_json.json
+    bm25-save-path:  db/data/bm25.json
