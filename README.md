@@ -1,4 +1,4 @@
-# 🍽️ EatAgent · 尝尝咸淡
+# 🍽️ EatRAG · 尝尝咸淡
 
 基于 **[all-in-rag](https://github.com/)** 开源项目改造的 **Java RAG 食谱问答练习项目**。
 
