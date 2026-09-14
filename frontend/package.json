@@ -1,0 +1,20 @@
+{
+  "name": "eatagent-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "description": "尝尝咸淡 —— 中文食谱智能问答 Web 前端",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "element-plus": "^2.9.1",
+    "markdown-it": "^14.1.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.3",
+    "vite": "^6.3.5"
+  }
+}

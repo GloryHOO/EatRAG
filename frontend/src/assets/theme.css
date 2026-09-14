@@ -1,0 +1,16 @@
+/* 全局主题：覆盖 Element Plus 主色调为暖橙色 */
+
+:root {
+  /* 主色：暖橙 */
+  --el-color-primary: #e6762d;
+
+  /* 浅色变体（主色与白色按比例混合） */
+  --el-color-primary-light-3: #ee9f6c;
+  --el-color-primary-light-5: #f2ba96;
+  --el-color-primary-light-7: #f8d6c0;
+  --el-color-primary-light-8: #fae2d2;
+  --el-color-primary-light-9: #fcf1ea;
+
+  /* 深色变体（主色与黑色按比例混合） */
+  --el-color-primary-dark-2: #b85e24;
+}
